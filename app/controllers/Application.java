@@ -2,15 +2,11 @@ package controllers;
 
 import play.*;
 import play.mvc.*;
-
-import java.util.*;
-
-import models.*;
+import jobs.*;
 
 public class Application extends Controller {
 
-    public static void index() {
-        render();
-    }
-
+ public static void index() {
+   redirect("datas/list");
+ }
 }
